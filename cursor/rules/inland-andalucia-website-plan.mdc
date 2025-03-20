@@ -1,0 +1,275 @@
+---
+description: 
+globs: *.html*,*.css*
+alwaysApply: false
+---
+# Inland Andalucia Website Development Plan
+
+This document outlines the structure and components required for the Inland Andalucia website based on the project information. The website focuses on real estate in inland Andalucia, Spain, with emphasis on both property listings and the lifestyle/cultural aspects of the region.
+
+## 1. Header & Navigation
+- Logo with the brand name "Inland Andalucia"
+- Main navigation menu with:
+  - Home
+  - Properties (with dropdown for different types)
+  - Town Guide (organized by province)
+  - About Andalucia 
+  - Buyer's Guide
+  - Blog
+  - Contact
+- Language selection option
+- User account / Login
+- Mobile-responsive hamburger menu
+
+## 2. Hero Section (Already Implemented)
+- Keep current design with:
+  - Background image of Andalucian properties/landscapes
+  - Headline: "Find Your Best Real Estate"
+  - Brief introduction text
+  - Search form with:
+    - Location
+    - Property type
+    - Price range
+    - Number of bedrooms
+    - Search button
+
+## 3. Property Search Section
+- Advanced search filters:
+  - Property type (Villa, Townhouse, Farm, Cortijo, etc.)
+  - Price range
+  - Bedrooms
+  - Bathrooms
+  - Swimming pool (Y/N)
+  - Property condition (Reform needed, Good condition, etc.)
+  - Reference number search
+- Display options:
+  - Grid view
+  - List view
+  - Map view (Google Maps integration)
+- Property cards with:
+  - Featured image
+  - Price
+  - Location
+  - Bedrooms/Bathrooms
+  - Brief description
+  - "View Details" button
+
+## 4. Featured Properties Section
+- Carousel/grid of highlighted properties
+- "Exclusive Listings" sub-section
+- Each property card should include:
+  - High-quality image(s)
+  - Price
+  - Location (Town, Province)
+  - Key features (bedrooms, bathrooms, size)
+  - Brief description
+  - Call-to-action button
+
+## 5. Regional Information Section
+- "Discover Inland Andalucia" heading
+- Interactive map of the 5 provinces (Jaen, Cordoba, Malaga, Seville, Granada)
+- Featured towns with images and brief descriptions
+- Climate information
+- Transportation and accessibility details
+- Links to detailed town guides
+
+## 6. Town Guide Section
+- Organized by province:
+  - Jaen
+  - Cordoba
+  - Malaga
+  - Seville
+  - Granada
+- Each town entry should include:
+  - Photos
+  - Description
+  - Local amenities
+  - Property market overview
+  - Things to do/see
+  - Nearby towns
+
+## 7. Lifestyle & Culture Section
+- Visual galleries of Andalucian lifestyle
+- Cultural highlights
+- Local cuisine
+- Seasonal activities
+- Historical information
+- Video content where available
+
+## 8. Buyer's Guide Section
+- Step-by-step property buying process in Spain
+- Information on:
+  - Spanish property taxes
+  - Legal requirements
+  - Mortgages in Spain
+  - Property ownership costs
+- FAQs
+- Downloadable resources
+
+## 9. Viewing Trip Section
+- Information about viewing trips
+- Trip planning assistance
+- Accommodation options
+- Itinerary examples
+- Booking form
+- Testimonials from previous clients
+
+## 10. Blog Section
+- Articles about:
+  - Andalucian lifestyle
+  - Property market updates
+  - Living in Spain
+  - Cultural events and traditions
+  - Local food and wine
+  - Historical features
+- Categories and search functionality
+- Featured/recent posts
+
+## 11. Testimonials Section
+- Client reviews and success stories
+- Before/after property transformations (if applicable)
+- Video testimonials
+- Customer journey showcases
+
+## 12. Team/About Us Section
+- Company history and mission
+- Team members with photos and roles
+- Office locations
+- Professional credentials and memberships
+- Franchise information
+
+## 13. Contact Section
+- Multiple contact methods:
+  - Email form
+  - Office addresses
+  - Phone numbers (with WhatsApp)
+  - Live chat option
+- Office hours
+- Map showing office locations
+- Response time expectations
+
+## 14. Newsletter Signup
+- Email capture form
+- Brief description of newsletter content
+- Privacy policy reference
+- Sample newsletter preview
+
+## 15. Footer
+- Quick links to main sections
+- Social media icons (Facebook, Instagram, YouTube)
+- Contact information summary
+- Legal information and disclaimers
+- Privacy policy and terms of service links
+- Copyright information
+
+## 16. Seller's Section
+- "Sell with us" information
+- Valuation request form
+- Marketing services offered
+- Commission structure
+- Success stories
+
+## 17. Internal Pages
+This section outlines all the individual pages needed for the website:
+
+### Main Pages
+1. **Home Page** - Main landing page with hero section, featured properties, and key sections
+2. **Properties Page** - Main property search interface with all filters
+   - Property Type Pages (Villas, Townhouses, Farms, Cortijos, etc.)
+   - Property By Price Range Pages
+   - Property By Feature Pages (With pool, garden, etc.)
+   - Search Results Page
+3. **Single Property Page** - Detailed view of individual properties
+   - Property gallery
+   - Property details
+   - Property features
+   - Location map
+   - Similar properties
+   - Contact form specific to that property
+4. **About Andalucia Page** - Overview of the region
+   - Climate information
+   - Transportation and airports
+   - General lifestyle information
+5. **Town Guide Main Page** - Overview of all provinces
+6. **Province Pages** (5 total) - One for each province:
+   - Jaen Province Page
+   - Cordoba Province Page
+   - Malaga Province Page
+   - Seville Province Page
+   - Granada Province Page
+7. **Individual Town Pages** (30+ pages) - For each town featured:
+   - Town description
+   - Local amenities
+   - Properties in that town
+   - Things to do/see
+8. **Buyer's Guide Main Page** - Overview of buying process
+9. **Buyer's Guide Sub-Pages**:
+   - Spanish Property Taxes Page
+   - Legal Requirements Page
+   - Mortgages in Spain Page
+   - Property Ownership Costs Page
+   - FAQ Page
+10. **Viewing Trip Page** - Information and booking
+11. **Blog Main Page** - Blog landing page with latest posts
+12. **Blog Category Pages** - One for each blog category:
+    - Lifestyle Category Page
+    - Property Market Category Page
+    - Living in Spain Category Page
+    - Cultural Events Category Page
+    - Food & Wine Category Page
+    - History Category Page
+13. **Individual Blog Post Pages** - For each article
+14. **Testimonials Page** - Collection of all testimonials
+15. **About Us Page** - Company information
+16. **Team Page** - Staff profiles
+17. **Office Locations Page** - Information about physical offices
+18. **Franchise Information Page** - For potential franchisees
+19. **Contact Page** - All contact methods
+20. **Sell With Us Page** - For property owners looking to sell
+21. **Newsletter Signup Page** - Dedicated newsletter signup
+22. **Legal Pages**:
+    - Privacy Policy Page
+    - Terms of Service Page
+    - Cookie Policy Page
+    - GDPR Compliance Page
+23. **404 Error Page** - Custom page for not found errors
+24. **Thank You Pages** - After form submissions
+25. **Search Results Page** - For site-wide search function
+
+### Administrative Pages
+1. **Login/Register Page** - For user accounts
+2. **User Dashboard** - For registered users
+3. **Saved Properties Page** - User's favorited properties
+4. **Saved Searches Page** - User's saved search criteria
+5. **User Profile Page** - Account settings
+
+## Technical Requirements
+- Responsive design for all devices
+- Fast loading times
+- SEO optimization
+- Property search with filtering capabilities
+- Google Maps integration
+- Multiple language support (at least English and Spanish)
+- Social media integration
+- Analytics tracking
+- Lead capture forms
+- Newsletter functionality
+- Blog content management
+- Property listing management system
+- Image galleries with optimization
+
+## Design Elements
+- Color scheme reflecting Andalucian aesthetics
+- Typography that balances professionalism with regional character
+- High-quality imagery of properties and landscapes
+- User-friendly interface prioritizing property search
+- Visual hierarchy emphasizing key selling points
+- Consistent branding throughout
+
+## Content Strategy
+- Focus on dual aspects: property listings and Andalucian lifestyle
+- Highlight unique selling points of inland Andalucia
+- Educational content about buying property in Spain
+- Showcase regional knowledge and expertise
+- Regular blog updates on lifestyle and regional topics
+- Property video tours and regional video content
