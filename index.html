@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inland | Find Your Dream Property</title>
+    <title>Inland Andalucia | Find Your Dream Property in Spain</title>
     <link href="./dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -19,22 +19,56 @@
         <div class="container mx-auto px-6 py-4 flex items-center">
             <div class="flex items-center mr-auto">
                 <a href="/" class="text-2xl font-bold text-primary-500">
-                    <i class="fas fa-home mr-2"></i>Inland
+                    <i class="fas fa-home mr-2"></i>Inland Andalucia
                 </a>
             </div>
             
             <nav class="hidden md:flex items-center space-x-8 mx-auto">
                 <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium">Home</a>
-                <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium">Buy</a>
-                <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium">Rent</a>
-                <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium">Sell</a>
-                <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium">About</a>
+                <div class="relative group">
+                    <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium flex items-center">
+                        Properties <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white hidden group-hover:block">
+                        <div class="py-1">
+                            <a href="#" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Villas</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Townhouses</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Farms</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Cortijos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium flex items-center">
+                        Town Guide <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+                    <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white hidden group-hover:block">
+                        <div class="py-1">
+                            <a href="#" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Jaen</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Cordoba</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Malaga</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Seville</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-neutral-700 hover:bg-neutral-100">Granada</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium">About Andalucia</a>
+                <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium">Buyer's Guide</a>
+                <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium">Blog</a>
                 <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium">Contact</a>
             </nav>
             
             <div class="md:flex items-center space-x-3 hidden ml-auto">
+                <div class="relative">
+                    <select class="appearance-none px-3 py-2 border border-neutral-200 rounded-md text-sm text-neutral-700 focus:outline-none">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-neutral-400">
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </div>
+                </div>
                 <a href="#" class="px-3 py-2 text-sm text-neutral-700 hover:text-primary-500 font-medium">Log in</a>
-                <a href="#" class="px-4 py-2 bg-primary-500 text-white rounded-full text-sm font-medium hover:bg-primary-600 transition">Sign up</a>
             </div>
             
             <!-- Mobile menu button -->
@@ -49,7 +83,7 @@
     <!-- Hero Section -->
     <section class="pt-32 pb-16 relative">
         <!-- Background image -->
-        <img src="./assets/images/hero-bg.jpg" alt="Modern home exterior" class="absolute inset-0 w-full h-full object-cover">
+        <img src="./assets/images/hero-bg.jpg" alt="Andalucian landscape" class="absolute inset-0 w-full h-full object-cover">
         
         <!-- Gradient overlay -->
         <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
@@ -58,7 +92,7 @@
             <div class="max-w-3xl py-16">
                 <h1 class="text-4xl md:text-5xl font-bold mb-4 text-neutral-800 leading-tight">Find Your Best Real Estate</h1>
                 <p class="text-lg mb-12 text-neutral-600 max-w-2xl">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullarum.
+                    Discover your dream property in the beautiful inland regions of Andalucia, Spain. From traditional cortijos to modern villas, we have the perfect home waiting for you.
                 </p>
                 
                 <!-- Search Box -->
@@ -66,25 +100,45 @@
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
                         <div class="md:col-span-3 px-4 py-2">
                             <div class="text-xs font-medium text-neutral-500 mb-1">Location</div>
-                            <input type="text" placeholder="Where are you going?" class="w-full border-0 p-0 text-neutral-800 bg-transparent focus:outline-none focus:ring-0 text-sm">
+                            <select class="w-full border-0 p-0 text-neutral-800 bg-transparent focus:outline-none focus:ring-0 text-sm">
+                                <option value="">All Locations</option>
+                                <option value="jaen">Jaen</option>
+                                <option value="cordoba">Cordoba</option>
+                                <option value="malaga">Malaga</option>
+                                <option value="seville">Seville</option>
+                                <option value="granada">Granada</option>
+                            </select>
                         </div>
                         <div class="md:col-span-3 px-4 py-2 border-l border-neutral-200">
-                            <div class="text-xs font-medium text-neutral-500 mb-1">Check-in</div>
-                            <input type="text" placeholder="Add dates" class="w-full border-0 p-0 text-neutral-800 bg-transparent focus:outline-none focus:ring-0 text-sm">
+                            <div class="text-xs font-medium text-neutral-500 mb-1">Property Type</div>
+                            <select class="w-full border-0 p-0 text-neutral-800 bg-transparent focus:outline-none focus:ring-0 text-sm">
+                                <option value="">All Types</option>
+                                <option value="villa">Villa</option>
+                                <option value="townhouse">Townhouse</option>
+                                <option value="farm">Farm</option>
+                                <option value="cortijo">Cortijo</option>
+                            </select>
                         </div>
                         <div class="md:col-span-3 px-4 py-2 border-l border-neutral-200">
-                            <div class="text-xs font-medium text-neutral-500 mb-1">Check-out</div>
-                            <input type="text" placeholder="Add dates" class="w-full border-0 p-0 text-neutral-800 bg-transparent focus:outline-none focus:ring-0 text-sm">
+                            <div class="text-xs font-medium text-neutral-500 mb-1">Price Range</div>
+                            <select class="w-full border-0 p-0 text-neutral-800 bg-transparent focus:outline-none focus:ring-0 text-sm">
+                                <option value="">Any Price</option>
+                                <option value="0-100000">Up to €100,000</option>
+                                <option value="100000-200000">€100,000 - €200,000</option>
+                                <option value="200000-300000">€200,000 - €300,000</option>
+                                <option value="300000+">€300,000+</option>
+                            </select>
                         </div>
                         <div class="md:col-span-2 px-4 py-2 border-l border-neutral-200">
-                            <div class="text-xs font-medium text-neutral-500 mb-1">Guests</div>
-                            <div class="flex items-center">
-                                <input type="text" value="2" readonly class="w-8 border-0 p-0 text-neutral-800 bg-transparent focus:outline-none focus:ring-0 text-sm">
-                                <div class="flex items-center space-x-1">
-                                    <button class="w-5 h-5 flex items-center justify-center rounded-full border border-neutral-300 text-neutral-400">-</button>
-                                    <button class="w-5 h-5 flex items-center justify-center rounded-full border border-neutral-300 text-neutral-400">+</button>
-                                </div>
-                            </div>
+                            <div class="text-xs font-medium text-neutral-500 mb-1">Bedrooms</div>
+                            <select class="w-full border-0 p-0 text-neutral-800 bg-transparent focus:outline-none focus:ring-0 text-sm">
+                                <option value="">Any</option>
+                                <option value="1">1+</option>
+                                <option value="2">2+</option>
+                                <option value="3">3+</option>
+                                <option value="4">4+</option>
+                                <option value="5">5+</option>
+                            </select>
                         </div>
                         <div class="md:col-span-1 flex items-center justify-center">
                             <button class="w-10 h-10 bg-primary-500 hover:bg-primary-600 text-white rounded-full flex items-center justify-center transition">
@@ -110,7 +164,7 @@
     <section class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="flex justify-between items-center mb-12">
-                <h2 class="text-3xl font-bold">Top 10 apartments</h2>
+                <h2 class="text-3xl font-bold">Featured Properties</h2>
                 <div class="flex space-x-2">
                     <button class="w-10 h-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-500 hover:bg-neutral-50">
                         <i class="fas fa-chevron-left"></i>
@@ -121,7 +175,7 @@
                 </div>
             </div>
             
-            <p class="text-neutral-600 max-w-3xl mb-12">From a room for a night to a loft for as long as you like, there's a RoomStay for every occasion.</p>
+            <p class="text-neutral-600 max-w-3xl mb-12">Discover our handpicked selection of properties across inland Andalucia, from traditional cortijos to modern villas with stunning mountain views.</p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Property Card 1 -->
@@ -129,19 +183,19 @@
                     <div class="relative">
                         <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Property" class="h-64 w-full object-cover">
                         <div class="absolute top-4 left-4">
-                            <span class="bg-primary-500 text-white text-xs px-3 py-1 rounded-full">Starting at</span>
-                            <span class="bg-primary-500 text-white text-sm font-bold px-3 py-1 rounded-full">$157<span class="text-xs font-normal">/per night</span></span>
+                            <span class="bg-primary-500 text-white text-xs px-3 py-1 rounded-full">Featured</span>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <span class="bg-primary-500 text-white text-sm font-bold px-3 py-1 rounded-full">€245,000</span>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-lg font-bold mb-1">Trejo Beautiful Escape</h3>
-                        <p class="text-neutral-500 text-sm mb-4">Roma Norte, Ciudad de México</p>
+                        <h3 class="text-lg font-bold mb-1">Charming Cortijo with Pool</h3>
+                        <p class="text-neutral-500 text-sm mb-4">Iznajar, Cordoba</p>
                         <div class="flex justify-between items-center text-neutral-600 text-sm">
-                            <span>4 Guests</span>
-                            <span class="mx-2">•</span>
-                            <span>2 Bedrooms</span>
-                            <span class="mx-2">•</span>
-                            <span>2 Bathrooms</span>
+                            <span><i class="fas fa-bed mr-1"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath mr-1"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined mr-1"></i> 180m²</span>
                         </div>
                     </div>
                 </div>
@@ -151,19 +205,19 @@
                     <div class="relative">
                         <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Property" class="h-64 w-full object-cover">
                         <div class="absolute top-4 left-4">
-                            <span class="bg-primary-500 text-white text-xs px-3 py-1 rounded-full">Starting at</span>
-                            <span class="bg-primary-500 text-white text-sm font-bold px-3 py-1 rounded-full">$157<span class="text-xs font-normal">/per night</span></span>
+                            <span class="bg-accent-500 text-neutral-800 text-xs px-3 py-1 rounded-full">New Listing</span>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <span class="bg-primary-500 text-white text-sm font-bold px-3 py-1 rounded-full">€175,000</span>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-lg font-bold mb-1">Trejo Beautiful Escape</h3>
-                        <p class="text-neutral-500 text-sm mb-4">Roma Norte, Ciudad de México</p>
+                        <h3 class="text-lg font-bold mb-1">Renovated Townhouse</h3>
+                        <p class="text-neutral-500 text-sm mb-4">Antequera, Malaga</p>
                         <div class="flex justify-between items-center text-neutral-600 text-sm">
-                            <span>4 Guests</span>
-                            <span class="mx-2">•</span>
-                            <span>2 Bedrooms</span>
-                            <span class="mx-2">•</span>
-                            <span>2 Bathrooms</span>
+                            <span><i class="fas fa-bed mr-1"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath mr-1"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined mr-1"></i> 120m²</span>
                         </div>
                     </div>
                 </div>
@@ -173,62 +227,254 @@
                     <div class="relative">
                         <img src="https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Property" class="h-64 w-full object-cover">
                         <div class="absolute top-4 left-4">
-                            <span class="bg-primary-500 text-white text-xs px-3 py-1 rounded-full">Starting at</span>
-                            <span class="bg-primary-500 text-white text-sm font-bold px-3 py-1 rounded-full">$157<span class="text-xs font-normal">/per night</span></span>
+                            <span class="bg-primary-500 text-white text-xs px-3 py-1 rounded-full">Exclusive</span>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <span class="bg-primary-500 text-white text-sm font-bold px-3 py-1 rounded-full">€320,000</span>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-lg font-bold mb-1">Trejo Beautiful Escape</h3>
-                        <p class="text-neutral-500 text-sm mb-4">Roma Norte, Ciudad de México</p>
+                        <h3 class="text-lg font-bold mb-1">Luxury Villa with Views</h3>
+                        <p class="text-neutral-500 text-sm mb-4">Priego de Cordoba, Cordoba</p>
                         <div class="flex justify-between items-center text-neutral-600 text-sm">
-                            <span>4 Guests</span>
-                            <span class="mx-2">•</span>
-                            <span>2 Bedrooms</span>
-                            <span class="mx-2">•</span>
-                            <span>2 Bathrooms</span>
+                            <span><i class="fas fa-bed mr-1"></i> 5 Beds</span>
+                            <span><i class="fas fa-bath mr-1"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler-combined mr-1"></i> 240m²</span>
                         </div>
                     </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="px-6 py-3 bg-primary-500 text-white rounded-full inline-flex items-center font-medium hover:bg-primary-600 transition">
+                    View All Properties <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Information Section -->
+    <section class="py-20 bg-neutral-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Discover Inland Andalucia</h2>
+                <p class="text-neutral-600 max-w-3xl mx-auto">
+                    Explore the authentic charm of inland Andalucia with its whitewashed villages, stunning landscapes, 
+                    rich culture, and affordable property prices.
+                </p>
+            </div>
+            
+            <!-- Interactive Map -->
+            <div class="bg-white p-8 rounded-2xl shadow-md mb-16">
+                <div class="relative aspect-[16/9] bg-neutral-100 rounded-lg mb-8 overflow-hidden">
+                    <!-- This is where an interactive map would go. For now, using a placeholder -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-map-marked-alt text-5xl text-neutral-300 mb-4"></i>
+                            <p class="text-neutral-500">Interactive Map of Andalucia</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Sample map overlay elements -->
+                    <div class="absolute top-1/4 left-1/4 w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center text-white cursor-pointer hover:bg-primary-600">
+                        <span>Jaen</span>
+                    </div>
+                    <div class="absolute top-1/3 left-1/2 w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center text-white cursor-pointer hover:bg-primary-600">
+                        <span>Cordoba</span>
+                    </div>
+                    <div class="absolute bottom-1/3 right-1/3 w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center text-white cursor-pointer hover:bg-primary-600">
+                        <span>Malaga</span>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                    <a href="#" class="block p-4 border border-neutral-200 rounded-lg hover:border-primary-500 transition">
+                        <h3 class="font-semibold text-lg mb-2">Jaen</h3>
+                        <p class="text-neutral-600 text-sm">Famous for olive groves and Renaissance architecture</p>
+                    </a>
+                    <a href="#" class="block p-4 border border-neutral-200 rounded-lg hover:border-primary-500 transition">
+                        <h3 class="font-semibold text-lg mb-2">Cordoba</h3>
+                        <p class="text-neutral-600 text-sm">Home to the famous Mezquita and beautiful countryside</p>
+                    </a>
+                    <a href="#" class="block p-4 border border-neutral-200 rounded-lg hover:border-primary-500 transition">
+                        <h3 class="font-semibold text-lg mb-2">Malaga</h3>
+                        <p class="text-neutral-600 text-sm">Beautiful villages and excellent transport connections</p>
+                    </a>
+                    <a href="#" class="block p-4 border border-neutral-200 rounded-lg hover:border-primary-500 transition">
+                        <h3 class="font-semibold text-lg mb-2">Seville</h3>
+                        <p class="text-neutral-600 text-sm">Rich cultural heritage and magnificent architecture</p>
+                    </a>
+                    <a href="#" class="block p-4 border border-neutral-200 rounded-lg hover:border-primary-500 transition">
+                        <h3 class="font-semibold text-lg mb-2">Granada</h3>
+                        <p class="text-neutral-600 text-sm">Home to the Alhambra and the Sierra Nevada mountains</p>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Featured Town -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80" alt="Antequera" class="rounded-lg shadow-md">
+                </div>
+                <div>
+                    <span class="text-sm text-primary-500 font-semibold mb-2 block">Featured Town</span>
+                    <h3 class="text-2xl font-bold mb-4">Antequera, Malaga</h3>
+                    <p class="text-neutral-600 mb-6">
+                        Known as "the heart of Andalucia" due to its central location, Antequera is a historic town with 
+                        rich architectural heritage, surrounded by beautiful countryside and the unique El Torcal 
+                        nature reserve. With excellent transport connections, it's a perfect base to explore the region.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-500 mt-1 mr-3"></i>
+                            <span>Central location with good transport links</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-500 mt-1 mr-3"></i>
+                            <span>Rich cultural heritage and local cuisine</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-500 mt-1 mr-3"></i>
+                            <span>Affordable property prices compared to coastal areas</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="text-primary-500 font-medium hover:text-primary-600 inline-flex items-center">
+                        Discover Antequera <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="py-20 bg-neutral-50">
+    <!-- Buyer's Guide Section -->
+    <section class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold mb-4 text-center">Conveniences of our service</h2>
+                <h2 class="text-3xl font-bold mb-4 text-center">Buying Property in Spain</h2>
                 <p class="text-neutral-600 text-center mb-16 max-w-3xl mx-auto">
-                    We can host guests on a daily basis or on a long term basis, and we can accommodate all kinds of travelers (individuals, families, teams, etc.) We can host guests on a daily basis or on a long term basis, and we can accommodate all kinds of travelers (individuals, families, rooms, etc.)
+                    Our comprehensive guide helps you navigate the Spanish property market with confidence. From legal requirements to taxes, we've got you covered every step of the way.
                 </p>
                 
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div class="text-center">
                         <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-md flex items-center justify-center mb-4">
-                            <i class="fas fa-utensils text-primary-500 text-2xl"></i>
+                            <i class="fas fa-search text-primary-500 text-2xl"></i>
                         </div>
-                        <h3 class="text-sm font-semibold">Kitchen with all equipment</h3>
+                        <h3 class="text-sm font-semibold">Find Your Property</h3>
+                        <p class="text-neutral-500 text-xs mt-2">Discover your perfect property in inland Andalucia</p>
                     </div>
                     
                     <div class="text-center">
                         <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-md flex items-center justify-center mb-4">
-                            <i class="fas fa-wifi text-primary-500 text-2xl"></i>
+                            <i class="fas fa-plane text-primary-500 text-2xl"></i>
                         </div>
-                        <h3 class="text-sm font-semibold">One-tap WiFi access</h3>
+                        <h3 class="text-sm font-semibold">Viewing Trips</h3>
+                        <p class="text-neutral-500 text-xs mt-2">We arrange personalized property viewing trips</p>
                     </div>
                     
                     <div class="text-center">
                         <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-md flex items-center justify-center mb-4">
-                            <i class="fas fa-headset text-primary-500 text-2xl"></i>
+                            <i class="fas fa-file-signature text-primary-500 text-2xl"></i>
                         </div>
-                        <h3 class="text-sm font-semibold">Round-the-clock support</h3>
+                        <h3 class="text-sm font-semibold">Legal Support</h3>
+                        <p class="text-neutral-500 text-xs mt-2">Expert advice on the legal aspects of buying in Spain</p>
                     </div>
                     
                     <div class="text-center">
                         <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-md flex items-center justify-center mb-4">
-                            <i class="fas fa-clock text-primary-500 text-2xl"></i>
+                            <i class="fas fa-key text-primary-500 text-2xl"></i>
                         </div>
-                        <h3 class="text-sm font-semibold">Request late checkout</h3>
+                        <h3 class="text-sm font-semibold">After-Sales Service</h3>
+                        <p class="text-neutral-500 text-xs mt-2">We're here for you long after you get your keys</p>
+                    </div>
+                </div>
+                
+                <div class="mt-16 text-center">
+                    <a href="#" class="px-6 py-3 bg-primary-500 text-white rounded-full inline-flex items-center font-medium hover:bg-primary-600 transition">
+                        Read Our Buyer's Guide <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-neutral-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">What Our Clients Say</h2>
+                <p class="text-neutral-600 max-w-3xl mx-auto">
+                    Hear from happy homeowners who found their dream property in inland Andalucia with our help.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-neutral-600 mb-6 italic">
+                        "The team at Inland Andalucia made our dream of owning a Spanish cortijo a reality. Their knowledge of the local market and patient guidance through the buying process was invaluable."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-neutral-200 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-semibold">Sarah & John Thompson</h4>
+                            <p class="text-sm text-neutral-500">Bought a cortijo in Iznajar</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-neutral-600 mb-6 italic">
+                        "After searching for months along the coast, we discovered the charm and value of inland Andalucia through this agency. They found us the perfect townhouse with mountain views at half the price of coastal properties."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-neutral-200 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-semibold">Michael & Emma Wilson</h4>
+                            <p class="text-sm text-neutral-500">Bought a townhouse in Antequera</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-neutral-600 mb-6 italic">
+                        "The viewing trip organized by Inland Andalucia was fantastic. They showed us a range of properties across different towns, helping us understand what we could get for our budget. Their local knowledge was exceptional."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-neutral-200 rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-semibold">David & Laura Smith</h4>
+                            <p class="text-sm text-neutral-500">Bought a villa in Priego de Cordoba</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -238,15 +484,83 @@
     <!-- CTA Section -->
     <section class="py-20 bg-gradient-to-r from-primary-600 to-primary-700 text-white">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-4">Ready to Find Your Perfect Property?</h2>
-            <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">Join thousands of satisfied customers who found their dream homes with Inland</p>
+            <h2 class="text-3xl font-bold mb-4">Ready to Find Your Perfect Property in Andalucia?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">Join thousands of satisfied customers who discovered the authentic charm and value of inland Spain</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#" class="px-8 py-3 bg-white text-primary-500 font-medium rounded-full hover:bg-neutral-100 transition">
                     Search Properties
                 </a>
                 <a href="#" class="px-8 py-3 bg-accent-500 text-neutral-800 font-medium rounded-full hover:bg-accent-600 transition">
-                    Contact Us
+                    Plan Your Viewing Trip
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold">Latest from Our Blog</h2>
+                <a href="#" class="text-primary-500 font-medium hover:text-primary-600 inline-flex items-center">
+                    View All Posts <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1590690013276-76defef40c16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80" alt="Spanish olive grove" class="h-48 w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-medium text-primary-500 mb-2 block">Lifestyle</span>
+                        <h3 class="text-lg font-bold mb-3">The Olive Oil Culture of Andalucia</h3>
+                        <p class="text-neutral-600 text-sm mb-4 line-clamp-3">
+                            Discover the rich tradition of olive oil production in Andalucia, home to some of the world's finest olive oils...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-neutral-500">June 15, 2023</span>
+                            <a href="#" class="text-primary-500 font-medium text-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1591006132135-7cbcd6ba8263?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80" alt="White village" class="h-48 w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-medium text-primary-500 mb-2 block">Property Market</span>
+                        <h3 class="text-lg font-bold mb-3">Why Inland Property Prices Are Rising</h3>
+                        <p class="text-neutral-600 text-sm mb-4 line-clamp-3">
+                            The inland regions of Andalucia are seeing increased interest from international buyers. Here's why property values are climbing...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-neutral-500">May 22, 2023</span>
+                            <a href="#" class="text-primary-500 font-medium text-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1565786635663-75c6d269ad75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80" alt="Spanish food" class="h-48 w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-medium text-primary-500 mb-2 block">Lifestyle</span>
+                        <h3 class="text-lg font-bold mb-3">Top 10 Local Dishes to Try in Andalucia</h3>
+                        <p class="text-neutral-600 text-sm mb-4 line-clamp-3">
+                            From gazpacho to flamenquín, these traditional Andalucian dishes showcase the region's rich culinary heritage...
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-neutral-500">April 10, 2023</span>
+                            <a href="#" class="text-primary-500 font-medium text-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -257,9 +571,9 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                 <div>
                     <a href="/" class="text-2xl font-bold mb-4 inline-block">
-                        <i class="fas fa-home mr-2"></i>Inland
+                        <i class="fas fa-home mr-2"></i>Inland Andalucia
                     </a>
-                    <p class="text-neutral-400 mt-4">Your trusted partner in finding the perfect property for your needs.</p>
+                    <p class="text-neutral-400 mt-4">Your trusted partner in finding authentic properties in the beautiful inland regions of Andalucia, Spain.</p>
                     <div class="flex space-x-4 mt-6">
                         <a href="#" class="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center text-neutral-300 hover:bg-primary-500 hover:text-white transition">
                             <i class="fab fa-facebook-f"></i>
@@ -268,28 +582,31 @@
                             <i class="fab fa-instagram"></i>
                         </a>
                         <a href="#" class="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center text-neutral-300 hover:bg-primary-500 hover:text-white transition">
-                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-youtube"></i>
                         </a>
                     </div>
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-semibold mb-6">About us</h4>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
                     <ul class="space-y-4">
-                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Business and groups</a></li>
-                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Support</a></li>
-                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Responsibility</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Properties</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Town Guide</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">About Andalucia</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Buyer's Guide</a></li>
                         <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Blog</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Contact</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-semibold mb-6">Services</h4>
+                    <h4 class="text-lg font-semibold mb-6">Provinces</h4>
                     <ul class="space-y-4">
-                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Buy a Property</a></li>
-                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Sell a Property</a></li>
-                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Rent a Property</a></li>
-                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Property Valuation</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Jaen</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Cordoba</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Malaga</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Seville</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Granada</a></li>
                     </ul>
                 </div>
                 
@@ -298,15 +615,15 @@
                     <ul class="space-y-4 text-neutral-400">
                         <li class="flex items-start">
                             <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
-                            <span class="text-sm">123 Real Estate Ave, City, State 12345</span>
+                            <span class="text-sm">Calle Corredera 55, 29320 Campillos, Malaga, Spain</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-phone mr-3"></i>
-                            <span class="text-sm">+1 555-555-5454</span>
+                            <span class="text-sm">+34 952 735 564</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-envelope mr-3"></i>
-                            <span class="text-sm">info@inlandrealestate.com</span>
+                            <span class="text-sm">info@inland-andalucia.com</span>
                         </li>
                     </ul>
                     
@@ -314,18 +631,21 @@
                         <h4 class="text-sm font-semibold mb-4">Language</h4>
                         <select class="bg-neutral-800 text-white py-2 px-4 rounded-lg text-sm focus:outline-none">
                             <option>English</option>
-                            <option>Spanish</option>
-                            <option>French</option>
+                            <option>Español</option>
+                            <option>Français</option>
+                            <option>Deutsch</option>
+                            <option>Nederlands</option>
                         </select>
                     </div>
                 </div>
             </div>
             
             <div class="border-t border-neutral-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-neutral-400 text-sm">© 2023 Inland Real Estate. All rights reserved.</p>
+                <p class="text-neutral-400 text-sm">© 2023 Inland Andalucia Real Estate. All rights reserved.</p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
                     <a href="#" class="text-neutral-400 hover:text-white transition text-sm">Terms of Service</a>
                     <a href="#" class="text-neutral-400 hover:text-white transition text-sm">Privacy Policy</a>
+                    <a href="#" class="text-neutral-400 hover:text-white transition text-sm">Cookie Policy</a>
                 </div>
             </div>
         </div>
