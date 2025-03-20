@@ -1,0 +1,13 @@
+{
+  "name": "real-estate-search",
+  "version": "1.0.0",
+  "description": "Real Estate Property Search Website",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+} 

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inland | Find Your Dream Property</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-neutral-800">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center">
+            <div class="flex items-center mr-auto">
+                <a href="/" class="text-2xl font-bold text-primary-500">
+                    <i class="fas fa-home mr-2"></i>Inland
+                </a>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 mx-auto">
+                <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium">Home</a>
+                <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium">Buy</a>
+                <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium">Rent</a>
+                <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium">Sell</a>
+                <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium">About</a>
+                <a href="#" class="text-neutral-600 hover:text-primary-500 text-sm font-medium">Contact</a>
+            </nav>
+            
+            <div class="md:flex items-center space-x-3 hidden ml-auto">
+                <a href="#" class="px-3 py-2 text-sm text-neutral-700 hover:text-primary-500 font-medium">Log in</a>
+                <a href="#" class="px-4 py-2 bg-primary-500 text-white rounded-full text-sm font-medium hover:bg-primary-600 transition">Sign up</a>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button class="md:hidden flex items-center ml-auto">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 relative">
+        <!-- Background image -->
+        <img src="./assets/images/hero-bg.jpg" alt="Modern home exterior" class="absolute inset-0 w-full h-full object-cover">
+        
+        <!-- Gradient overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl py-16">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-neutral-800 leading-tight">Find Your Best Real Estate</h1>
+                <p class="text-lg mb-12 text-neutral-600 max-w-2xl">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullarum.
+                </p>
+                
+                <!-- Search Box -->
+                <div class="bg-white p-2 rounded-full shadow-xl mb-8 max-w-4xl">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-0">
+                        <div class="md:col-span-3 px-4 py-2">
+                            <div class="text-xs font-medium text-neutral-500 mb-1">Location</div>
+                            <input type="text" placeholder="Where are you going?" class="w-full border-0 p-0 text-neutral-800 bg-transparent focus:outline-none focus:ring-0 text-sm">
+                        </div>
+                        <div class="md:col-span-3 px-4 py-2 border-l border-neutral-200">
+                            <div class="text-xs font-medium text-neutral-500 mb-1">Check-in</div>
+                            <input type="text" placeholder="Add dates" class="w-full border-0 p-0 text-neutral-800 bg-transparent focus:outline-none focus:ring-0 text-sm">
+                        </div>
+                        <div class="md:col-span-3 px-4 py-2 border-l border-neutral-200">
+                            <div class="text-xs font-medium text-neutral-500 mb-1">Check-out</div>
+                            <input type="text" placeholder="Add dates" class="w-full border-0 p-0 text-neutral-800 bg-transparent focus:outline-none focus:ring-0 text-sm">
+                        </div>
+                        <div class="md:col-span-2 px-4 py-2 border-l border-neutral-200">
+                            <div class="text-xs font-medium text-neutral-500 mb-1">Guests</div>
+                            <div class="flex items-center">
+                                <input type="text" value="2" readonly class="w-8 border-0 p-0 text-neutral-800 bg-transparent focus:outline-none focus:ring-0 text-sm">
+                                <div class="flex items-center space-x-1">
+                                    <button class="w-5 h-5 flex items-center justify-center rounded-full border border-neutral-300 text-neutral-400">-</button>
+                                    <button class="w-5 h-5 flex items-center justify-center rounded-full border border-neutral-300 text-neutral-400">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-1 flex items-center justify-center">
+                            <button class="w-10 h-10 bg-primary-500 hover:bg-primary-600 text-white rounded-full flex items-center justify-center transition">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Carousel indicators -->
+        <div class="flex justify-center md:justify-start md:pl-6 md:container md:mx-auto mt-4 space-x-2 relative z-10">
+            <button class="w-2 h-2 rounded-full bg-primary-500 opacity-100"></button>
+            <button class="w-2 h-2 rounded-full bg-neutral-400 opacity-50"></button>
+            <button class="w-2 h-2 rounded-full bg-neutral-400 opacity-50"></button>
+            <button class="w-2 h-2 rounded-full bg-neutral-400 opacity-50"></button>
+            <button class="w-2 h-2 rounded-full bg-neutral-400 opacity-50"></button>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold">Top 10 apartments</h2>
+                <div class="flex space-x-2">
+                    <button class="w-10 h-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-500 hover:bg-neutral-50">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="w-10 h-10 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-500 hover:bg-neutral-50">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <p class="text-neutral-600 max-w-3xl mb-12">From a room for a night to a loft for as long as you like, there's a RoomStay for every occasion.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Property Card 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Property" class="h-64 w-full object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-primary-500 text-white text-xs px-3 py-1 rounded-full">Starting at</span>
+                            <span class="bg-primary-500 text-white text-sm font-bold px-3 py-1 rounded-full">$157<span class="text-xs font-normal">/per night</span></span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-1">Trejo Beautiful Escape</h3>
+                        <p class="text-neutral-500 text-sm mb-4">Roma Norte, Ciudad de México</p>
+                        <div class="flex justify-between items-center text-neutral-600 text-sm">
+                            <span>4 Guests</span>
+                            <span class="mx-2">•</span>
+                            <span>2 Bedrooms</span>
+                            <span class="mx-2">•</span>
+                            <span>2 Bathrooms</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property Card 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Property" class="h-64 w-full object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-primary-500 text-white text-xs px-3 py-1 rounded-full">Starting at</span>
+                            <span class="bg-primary-500 text-white text-sm font-bold px-3 py-1 rounded-full">$157<span class="text-xs font-normal">/per night</span></span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-1">Trejo Beautiful Escape</h3>
+                        <p class="text-neutral-500 text-sm mb-4">Roma Norte, Ciudad de México</p>
+                        <div class="flex justify-between items-center text-neutral-600 text-sm">
+                            <span>4 Guests</span>
+                            <span class="mx-2">•</span>
+                            <span>2 Bedrooms</span>
+                            <span class="mx-2">•</span>
+                            <span>2 Bathrooms</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property Card 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Property" class="h-64 w-full object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-primary-500 text-white text-xs px-3 py-1 rounded-full">Starting at</span>
+                            <span class="bg-primary-500 text-white text-sm font-bold px-3 py-1 rounded-full">$157<span class="text-xs font-normal">/per night</span></span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-1">Trejo Beautiful Escape</h3>
+                        <p class="text-neutral-500 text-sm mb-4">Roma Norte, Ciudad de México</p>
+                        <div class="flex justify-between items-center text-neutral-600 text-sm">
+                            <span>4 Guests</span>
+                            <span class="mx-2">•</span>
+                            <span>2 Bedrooms</span>
+                            <span class="mx-2">•</span>
+                            <span>2 Bathrooms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-neutral-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-4 text-center">Conveniences of our service</h2>
+                <p class="text-neutral-600 text-center mb-16 max-w-3xl mx-auto">
+                    We can host guests on a daily basis or on a long term basis, and we can accommodate all kinds of travelers (individuals, families, teams, etc.) We can host guests on a daily basis or on a long term basis, and we can accommodate all kinds of travelers (individuals, families, rooms, etc.)
+                </p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-md flex items-center justify-center mb-4">
+                            <i class="fas fa-utensils text-primary-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-sm font-semibold">Kitchen with all equipment</h3>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-md flex items-center justify-center mb-4">
+                            <i class="fas fa-wifi text-primary-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-sm font-semibold">One-tap WiFi access</h3>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-md flex items-center justify-center mb-4">
+                            <i class="fas fa-headset text-primary-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-sm font-semibold">Round-the-clock support</h3>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-md flex items-center justify-center mb-4">
+                            <i class="fas fa-clock text-primary-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-sm font-semibold">Request late checkout</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary-600 to-primary-700 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Find Your Perfect Property?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">Join thousands of satisfied customers who found their dream homes with Inland</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="px-8 py-3 bg-white text-primary-500 font-medium rounded-full hover:bg-neutral-100 transition">
+                    Search Properties
+                </a>
+                <a href="#" class="px-8 py-3 bg-accent-500 text-neutral-800 font-medium rounded-full hover:bg-accent-600 transition">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <a href="/" class="text-2xl font-bold mb-4 inline-block">
+                        <i class="fas fa-home mr-2"></i>Inland
+                    </a>
+                    <p class="text-neutral-400 mt-4">Your trusted partner in finding the perfect property for your needs.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center text-neutral-300 hover:bg-primary-500 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center text-neutral-300 hover:bg-primary-500 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-neutral-800 flex items-center justify-center text-neutral-300 hover:bg-primary-500 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">About us</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Business and groups</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Support</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Responsibility</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Services</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Buy a Property</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Sell a Property</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Rent a Property</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition text-sm">Property Valuation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-neutral-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span class="text-sm">123 Real Estate Ave, City, State 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span class="text-sm">+1 555-555-5454</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span class="text-sm">info@inlandrealestate.com</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-8">
+                        <h4 class="text-sm font-semibold mb-4">Language</h4>
+                        <select class="bg-neutral-800 text-white py-2 px-4 rounded-lg text-sm focus:outline-none">
+                            <option>English</option>
+                            <option>Spanish</option>
+                            <option>French</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-neutral-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-neutral-400 text-sm">© 2023 Inland Real Estate. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-neutral-400 hover:text-white transition text-sm">Terms of Service</a>
+                    <a href="#" class="text-neutral-400 hover:text-white transition text-sm">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
